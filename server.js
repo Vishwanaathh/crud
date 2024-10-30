@@ -58,7 +58,7 @@ app.delete('/:id',async(req,res)=>{
 
 
 mongoose
-.connect('mongodb+srv://admin:root@cluster0.kwlzyeo.mongodb.net/BOOKSINFO?retryWrites=true&w=majority&appName=Cluster0')
+.connect()
 .then(()=>{app.listen(4000,()=>{
   console.log("Listening");
 })});
